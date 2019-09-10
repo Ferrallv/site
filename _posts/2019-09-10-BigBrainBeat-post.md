@@ -42,7 +42,7 @@ Using target vectors like this at higher sample rates proved to be difficult for
 I thought about the way we hear the beat in music. A beat is an event in time that we recognize in relation to the changes that happen temporally in music. A frequency change or an amplitude change <u>in time</u> is more important to determining the rhythm than the degree to which they change.<sup>[1](#fn1)</sup>
  So I began to simplify my data to highlight these changes.
 
-Version 2 experimented with 1D convolution filters, explained in the [keras documentation](https://keras.io/layers/convolutional/), to be commonly used to highlight temporal changes. Here I experimented with different layers, such as [BatchNormalization](https://keras.io/layers/normalization/), [MaxPooling](https://keras.io/layers/pooling/), and multiple [DenseLayers](https://keras.io/layers/core/). These trials lead me to my most successful model.
+Version 2 experimented with 1D convolution filters, which are explained in the [keras documentation](https://keras.io/layers/convolutional/) to be commonly used with temporal inputs. Here I experimented with different layers, such as [BatchNormalization](https://keras.io/layers/normalization/), [MaxPooling](https://keras.io/layers/pooling/), and multiple [DenseLayers](https://keras.io/layers/core/). These trials lead me to my most successful model.
 
 ## Version 3
 
