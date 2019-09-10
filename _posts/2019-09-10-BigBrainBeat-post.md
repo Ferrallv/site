@@ -1,3 +1,12 @@
+---
+title: "BigBrainBeat - A neural network to detect BPM"
+excerpt_separator: "<!--more-->"
+categories:
+  - Project
+---
+
+
+
 ___
 
 ## *TL;DR (or <u>Don't talk tech to me</u>)*
