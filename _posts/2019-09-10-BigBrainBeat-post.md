@@ -57,15 +57,16 @@ In Phase 1 I wrote 80 drum tracks, with BPM ranging from 80-160.
 
     -  Music that has either half or double the BPM of other music that started at the same time will have their beats match up every time for the slower piece, and every second beat for the faster. To illustrate:
 
-___
-60 BPM, sample rate = 4
+      
+      60 BPM, sample rate = 4
 
-[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
 
-120 BPM, sample rate = 4
+      120 BPM, sample rate = 4
 
-[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
-___
+      [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+
+      
 
 With this reasoning in mind, I felt that I effectively covered BPM between 40-320.
 
@@ -82,7 +83,9 @@ I needed to manipulate the raw `.wav` files into suitable shapes for the CNN, as
 `makedf` extracts the data from a `.wav` file as a numpy array, slices it up randomly a given number of times, and returns these slices as matrices (for the CNN).
 
 
-A visualization of a slice from an 80 BPM phase 1 `.wav`
+![A visualization of a slice from an 90 BPM phase 1 `.wav`](downsampled90bpmwav.png)
+
+A visualization of a slice from an 90 BPM phase 1 `.wav`
 
 
 I wrote a `for` loop to go through all of the tracks that I made for that specific phase to create the dataset. The data was then split into train and test sets.
@@ -102,6 +105,11 @@ In each phase, the model and its weights from the previous phase were imported a
 In phase 1 we see an accuracy of 63%, phase 2: 59%, and phase 3: 90%. The accuracy in the third model being higher is likely explained by the lack of variety of tempo in the music that was used.
 
 The mapped accuracy and loss scores over the epochs indicate that the model is successful with little over-fitting.
+
+![The loss and accuracy change over epochs of phase 1](BigBrainBeatv3_phase1_accAndLoss.png)
+![The loss and accuracy change over epochs of phase 2](BigBrainBeatv3_phase2_accAndLoss.png)
+![The loss and accuracy change over epochs of phase 3](BigBrainBeatv3_phase3_accAndLoss.png)
+
 
 ## Conclusions
 
