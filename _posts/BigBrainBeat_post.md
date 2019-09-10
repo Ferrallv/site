@@ -69,7 +69,7 @@ I needed to manipulate the raw `.wav` files into suitable shapes for the CNN, as
 
 `makedf` extracts the data from a `.wav` file as a numpy array, slices it up randomly a given number of times, and returns these slices as matrices (for the CNN).
 
-![A visualization of a slice from an 80 BPM phase 1 `.wav`](/assets/images/downsampled90bpmwav.png = 100x100)
+![A visualization of a slice from an 80 BPM phase 1 `.wav`](/assets/images/downsampled90bpmwav.png =100x100)
 
 A visualization of a slice from an 80 BPM phase 1 `.wav`
 
