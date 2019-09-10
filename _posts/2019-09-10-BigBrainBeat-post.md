@@ -70,7 +70,7 @@ The phase 1 `.wav` files were simply a drum kick sound for every beat. The creat
 
 In Phase 2 I created a cacophony of drums and synths. It was also created digitally to be consistent and precisely in time. The rhythms and sounds changed erratically throughout. Every drum sound was synced to a segmentation of 1/16<sup>th</sup> of a beat. The BPM range in phase 2 is the same as that in phase 1. The tracks length are similarly ~10 seconds.
 
-In Phase 3 I used the music listed in the `SourcesAndInspirations.md` found [here](https://github.com/Ferrallv/BigBrainBeat/blob/master/SourcesAndInspirations.md).For those interested, I converted each file into `.wav` using [this](https://librosa.github.io/librosa/generated/librosa.output.write_wav.html). I could not be positive what the exact BPM was for each song, instead tapping the tempo myself 50 times and taking the average speed using [this website](https://www.all8.com/tools/bpm.htm).
+In Phase 3 I used the music listed in the `SourcesAndInspirations.md` found [here](https://github.com/Ferrallv/BigBrainBeat/blob/master/SourcesAndInspirations.md). For those interested, I converted each file into `.wav` using [this](https://librosa.github.io/librosa/generated/librosa.output.write_wav.html). I could not be positive what the exact BPM was for each song, instead tapping the tempo myself 50 times and taking the average speed using [this website](https://www.all8.com/tools/bpm.htm).
 
 #### The Model & Process
 
