@@ -35,7 +35,7 @@ To explain, a wave file generally has 44100 records per second of audio (the sam
 
 To demonstrate, a target vector for a 4 second slice of music, played at 60 BPM (one beat per second), at a sample rate of 4, and starting on the beat would look like:
 
-    [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+    <p style="text-align:center">[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]</p>
 
 Using target vectors like this at higher sample rates proved to be difficult for my models to predict and I had little success. I went back to the drawing board.
 
@@ -60,11 +60,11 @@ In Phase 1 I wrote 80 drum tracks, with BPM ranging from 80-160.
       
       60 BPM, sample rate = 4
 
-      [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+      <p style="text-align:center">[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]</p>
 
       120 BPM, sample rate = 4
 
-      [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+      <p style="text-align:center">[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]</p>
 
       
 
