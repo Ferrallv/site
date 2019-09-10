@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-# Hello!
+## Hello!
 
  I am a data scientist with skills in Python, SQL, data wrangling/processing, Machine Learning, Big Data, and Neural Networks.
 
