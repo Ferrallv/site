@@ -58,13 +58,13 @@ In Phase 1 I wrote 80 drum tracks, with BPM ranging from 80-160.
     -  Music that has either half or double the BPM of other music that started at the same time will have their beats match up every time for the slower piece, and every second beat for the faster. To illustrate:
 
 ___
-<p align="center">60 BPM, sample rate = 4</p>
-<p align="center">[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]</p>
+60 BPM, sample rate = 4
 
-<p align="center">120 BPM, sample rate = 4</p>
+[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
 
-<p align="center">[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]</p>
+120 BPM, sample rate = 4
 
+[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
 ___
 
 With this reasoning in mind, I felt that I effectively covered BPM between 40-320.
