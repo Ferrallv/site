@@ -23,7 +23,7 @@ It will be my hope to explain: what my goal was, my trials and tribulations in t
 
 I set out to build an AI that could determine the beats within a piece of music. In this context I loosely defined a "beat" as the time in music when you nod your head, snap your fingers, tap your foot, etc. If unfamiliar with related musical theory, an easy explanation can be found [here](https://www.bbc.co.uk/bitesize/guides/zs9wk2p/revision/1).
 
-I got the idea for the method from [Liam Schoneveld](https://github.com/nlml)'s work, which I found when researching this idea.
+I got the idea for the method from [Liam Schoneveld](https://github.com/nlml/bpm)'s work, which I found when researching this idea.
 
 ## Versions 1 and 2
 
