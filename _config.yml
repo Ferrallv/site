@@ -21,8 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: ferrallv
 minimal_mistakes_skin: contrast
 search: true
-url: https://ferrallv.github.io
-baseurl: /site
+url: "https://ferrallv.github.io"
+baseurl: "/site"
 
 
 # Build settings
