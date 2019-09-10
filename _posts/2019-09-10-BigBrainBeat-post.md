@@ -82,7 +82,7 @@ I needed to manipulate the raw `.wav` files into suitable shapes for the CNN, as
 
 `makedf` extracts the data from a `.wav` file as a numpy array, slices it up randomly a given number of times, and returns these slices as matrices (for the CNN).
 
-![A visualization of a slice from an 90 BPM phase 1 `.wav`]({{site.url}}/assets/images/downsampled90bpmwav.png)
+![A visualization of a slice from an 90 BPM phase 1 `.wav`](/assets/images/downsampled90bpmwav.png)
 
 A visualization of a slice from an 90 BPM phase 1 `.wav`
 
@@ -105,9 +105,9 @@ In phase 1 we see an accuracy of 63%, phase 2: 59%, and phase 3: 90%. The accura
 
 The mapped accuracy and loss scores over the epochs indicate that the model is successful with little over-fitting.
 
-![The accuracy and loss over epochs in phase 1]({{site.url}}/assets/images/BigBrainBeatv3_phase1_accAndLoss.png)
-![The accuracy and loss over epochs in phase 2]({{site.url}}/assets/images/BigBrainBeatv3_phase2_accAndLoss.png)
-![The accuracy and loss over epochs in phase 3]({{site.url}}/assets/images/BigBrainBeatv3_phase3_accAndLoss.png)
+![The accuracy and loss over epochs in phase 1](/assets/images/BigBrainBeatv3_phase1_accAndLoss.png)
+![The accuracy and loss over epochs in phase 2](/assets/images/BigBrainBeatv3_phase2_accAndLoss.png)
+![The accuracy and loss over epochs in phase 3](/assets/images/BigBrainBeatv3_phase3_accAndLoss.png)
 
 ## Conclusions
 
