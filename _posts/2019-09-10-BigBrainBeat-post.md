@@ -57,12 +57,15 @@ In Phase 1 I wrote 80 drum tracks, with BPM ranging from 80-160.
 
     -  Music that has either half or double the BPM of other music that started at the same time will have their beats match up every time for the slower piece, and every second beat for the faster. To illustrate:
 
+___
 <p align="center">60 BPM, sample rate = 4</p>
 <p align="center">[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]</p>
 
 <p align="center">120 BPM, sample rate = 4</p>
 
 <p align="center">[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]</p>
+
+___
 
 With this reasoning in mind, I felt that I effectively covered BPM between 40-320.
 
@@ -78,7 +81,7 @@ I needed to manipulate the raw `.wav` files into suitable shapes for the CNN, as
 
 `makedf` extracts the data from a `.wav` file as a numpy array, slices it up randomly a given number of times, and returns these slices as matrices (for the CNN).
 
-![A visualization of a slice from an 80 BPM phase 1 `.wav`](/assets/images/downsampled90bpmwav.png)
+![A visualization of a slice from an 80 BPM phase 1 `.wav`|200x100](/assets/images/downsampled90bpmwav.png)
 
 A visualization of a slice from an 80 BPM phase 1 `.wav`
 
