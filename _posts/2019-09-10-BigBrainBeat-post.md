@@ -29,7 +29,7 @@ I got the idea for the method from [Liam Schoneveld](https://github.com/nlml/bpm
 
 I started initially with a lot of failures. While developing my Convolution Neural Network I approached different methods of formatting my data.
 
-In version 1 I was attempting to use a Short-time Fourier transform of a `.wav` file to create an image, which would then be used to predict a vector of equal time steps to the time steps of the audio.
+In version 1 I was attempting to use a [Short-time Fourier transform](https://en.wikipedia.org/wiki/Short-time_Fourier_transform) of a `.wav` file to create an image, which would then be used to predict a vector of equal time steps to the time steps of the audio.
 
 To explain, a wave file generally has 44100 records per second of audio (the sample rate). To emulate the location of a beat, a vector was created to match the audio file, where 1 was entered to indicate that a beat should be at this time, and a 0 otherwise.
 
