@@ -17,7 +17,7 @@ ___
 
 ## Overview
 
-It will be my hope to explain: what my goal was, my trials and tribulations in the process as well as my reasoning for some of the choices made, and how to recreate the experiment, results, and presentation.
+It will be my hope to explain: what my goal was, my trials and tribulations in the process as well as my reasoning for some of the choices made, and how to recreate the experiment, results, and presentation. It may be nice to follow along with the [code](https://github.com/Ferrallv/BigBrainBeat)
 
 ## Goal
 
