@@ -46,7 +46,7 @@ Version 2 experimented with 1D convolution filters, explained in the [keras docu
 
 ## Version 3
 
-#### The Data
+### The Data
 
 When considering the creation of the neural network I had to decide what data I would use. I hypothesized that a model might find more success if I train it on simple data first and then, using transfer learning, progressed onto more complicated data. I have not yet tested to see if this method would be any more or less effective than just starting on more complicated data.
 
@@ -76,14 +76,13 @@ In Phase 2 I created a cacophony of drums and synths. It was also created digita
 
 In Phase 3 I used the music listed in the `SourcesAndInspirations.md` found [here](https://github.com/Ferrallv/BigBrainBeat/blob/master/SourcesAndInspirations.md). For those interested, I converted each file into `.wav` using [this](https://librosa.github.io/librosa/generated/librosa.output.write_wav.html). I could not be positive what the exact BPM was for each song, instead tapping the tempo myself 50 times and taking the average speed using [this website](https://www.all8.com/tools/bpm.htm).
 
-#### The Model & Process
+### The Model & Process
 
 I needed to manipulate the raw `.wav` files into suitable shapes for the CNN, as well as to create enough data to use for training and testing the model. To do this I wrote the function `makedf`.
 
 `makedf` extracts the data from a `.wav` file as a numpy array, slices it up randomly a given number of times, and returns these slices as matrices (for the CNN).
 
-
-<img src="/assets/images/downsampled90bpmwav.png" alt=""/>
+![A visualization of a slice from an 90 BPM phase 1 `.wav`](https://github.com/Ferrallv/site/tree/master/assets/images/downsampled90bpmwav.png)
 
 A visualization of a slice from an 90 BPM phase 1 `.wav`
 
@@ -100,16 +99,15 @@ After creating an EC2 instance with a [DLAMI](https://docs.aws.amazon.com/dlami/
 
 In each phase, the model and its weights from the previous phase were imported and used as a starting point for the new phase of training.
 
-#### Results
+### Results
 
 In phase 1 we see an accuracy of 63%, phase 2: 59%, and phase 3: 90%. The accuracy in the third model being higher is likely explained by the lack of variety of tempo in the music that was used.
 
 The mapped accuracy and loss scores over the epochs indicate that the model is successful with little over-fitting.
 
-<img src="/assets/images/BigBrainBeatv3_phase1_accAndLoss.png" alt=""/>
-<img src="/assets/images/BigBrainBeatv3_phase2_accAndLoss.png" alt=""/>
-<img src="/assets/images/BigBrainBeatv3_phase3_accAndLoss.png" alt=""/>
-
+![The accuracy and loss over epochs in phase 1](https://github.com/Ferrallv/site/tree/master/assets/images/BigBrainBeatv3_phase1_accAndLoss.png)
+![The accuracy and loss over epochs in phase 2](https://github.com/Ferrallv/site/tree/master/assets/images/BigBrainBeatv3_phase2_accAndLoss.png)
+![The accuracy and loss over epochs in phase 3](https://github.com/Ferrallv/site/tree/master/assets/images/BigBrainBeatv3_phase3_accAndLoss.png)
 
 ## Conclusions
 
