@@ -71,7 +71,7 @@ author:
       url: "https://ferrallv.github.io/site"
     - label: "Email"
       icon: "fas fa-envelope-square"
-       url: "mailto:vanin.ferrall@gmail.com"
+      url: "mailto:vanin.ferrall@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ferrallv"
