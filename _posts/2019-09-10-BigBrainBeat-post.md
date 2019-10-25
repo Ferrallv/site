@@ -9,7 +9,7 @@ categories:
 
 ___
 
-## *TL;DR (or <u>Don't talk tech to me</u>)*
+## *TL;DR*
 
 I set out with the goal to find the BPM of a music sample using an AI (specifically a Convolution Neural Network). It turned out to be pretty successful with the data I used.
 
@@ -113,6 +113,7 @@ The mapped accuracy and loss scores over the epochs indicate that the model is s
 
 #### The accuracy and loss over epochs in phase 3
 {% include BigBrainBeatv3_phase3_accAndLoss.html %}
+
 
 ---
 
