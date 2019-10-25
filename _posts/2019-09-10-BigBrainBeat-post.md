@@ -114,6 +114,7 @@ The mapped accuracy and loss scores over the epochs indicate that the model is s
 #### The accuracy and loss over epochs in phase 3
 {% include BigBrainBeatv3_phase3_accAndLoss.html %}
 
+
 ## Conclusions
 
 Possible applications of the model might be:
