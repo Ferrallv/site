@@ -105,7 +105,6 @@ In phase 1 we see an accuracy of 63%, phase 2: 59%, and phase 3: 90%. The accura
 
 The mapped accuracy and loss scores over the epochs indicate that the model is successful with little over-fitting.
 
-{% include BigBrainBeatv3_phase1_accAndLoss.html %}
 
 ![The accuracy and loss over epochs in phase 1]({{site.url}}{{site.baseurl}}/assets/images/BigBrainBeatv3_phase1_accAndLoss.png)
 ![The accuracy and loss over epochs in phase 2]({{site.url}}{{site.baseurl}}/assets/images/BigBrainBeatv3_phase2_accAndLoss.png)
