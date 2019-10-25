@@ -113,9 +113,7 @@ The mapped accuracy and loss scores over the epochs indicate that the model is s
 
 {% include BigBrainBeatv3_phase3_accAndLoss.html %}
 
-
----
-
+___
 ## Conclusions
 
 Possible applications of the model might be:
@@ -135,6 +133,6 @@ In the future I hope to explore different ways of determining the beat in music 
 
 To see the models in action/application, run the `BigBrainBeat_Presentation.ipynb` found at the [BigBrainBeat](www.github.com/ferrallv/bigbrainbeat) repo. There you will also find a link to the `.wav` files I used. I encourage you to try your own `.wav` files as well to determine the success of the model yourself!
 
----
+___
 
 <a name="fn1">1</a>: Bouwer FL, Van Zuijen TL, Honing H (2014) Beat Processing Is Pre-Attentive for Metrically Simple Rhythms with Clear Accents: An ERP Study. PLoS ONE 9(5): e97467. https://doi.org/10.1371/journal.pone.0097467
