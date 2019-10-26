@@ -107,13 +107,13 @@ The mapped accuracy and loss scores over the epochs indicate that the model is s
 
 #### The accuracy and loss over epochs in phase 1, 2, and 3
 
-{% include BigBrainBeatv3_phase1_accAndLoss.html %}
+{{% include BigBrainBeatv3_phase1_accAndLoss.html %}
 ___
 
 {% include BigBrainBeatv3_phase2_accAndLoss.html %}
 
 ___
-{% include BigBrainBeatv3_phase3_accAndLoss.html %}
+{% include BigBrainBeatv3_phase3_accAndLoss.html %}}
 
 
 ## Conclusions
