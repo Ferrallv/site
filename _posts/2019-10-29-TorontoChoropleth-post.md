@@ -9,7 +9,7 @@ excerpt: "My friends and I were discussing ways to tell a story with data. I wan
 # The Finished Product
 
 <style>
-#wrapper { width: 710px; height: 350px; padding: 0; overflow: hidden; }
+#wrapper { width: 710px; height: 450px; padding: 0; overflow: hidden; }
 #scaled-frame { width: 1000px; height: 2000px; border: 0px; }
 #scaled-frame {
     zoom: 0.71;
