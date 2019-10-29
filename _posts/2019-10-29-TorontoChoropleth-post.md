@@ -38,7 +38,6 @@ To see the in-depth details of my data acquisition and transformation you can se
 
 To be able to share the interactive map I used Heroku to deploy my [Bokeh application](https://github.com/Ferrallv/TorontoChoropleth/tree/master/TorontoChoropleth).
 
-___
 
 ### Inspiration
 
