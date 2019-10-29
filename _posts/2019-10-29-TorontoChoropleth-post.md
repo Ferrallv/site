@@ -3,6 +3,7 @@ title: "Using Census Data In A Choropleth"
 excerpt_separator: "<!--more-->"
 categories:
   - Project
+excerpt: "My friends and I were discussing ways to tell a story with data. I wanted to try my hand at choropleths, specifically using Bokeh and creating an interactive feature"
 ---
 
 # The Finished Product
