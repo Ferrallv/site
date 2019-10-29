@@ -68,17 +68,17 @@ author:
   bio    : "Ready to laugh and high-five."
   links:
     - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://ferrallv.github.io/site"
+       icon: "fas fa-fw fa-link"
+        url: "https://ferrallv.github.io/site"
     - label: "Email"
-      icon: "fas fa-envelope-square"
-      url: "mailto:vanin.ferrall@gmail.com"
+       icon: "fas fa-envelope-square"
+        url: "mailto:vanin.ferrall@gmail.com"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ferrallv"
+       icon: "fab fa-fw fa-github"
+        url: "https://github.com/ferrallv"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/vaninferrall/"
+       icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/in/vaninferrall/"
 
 footer:
   links:
