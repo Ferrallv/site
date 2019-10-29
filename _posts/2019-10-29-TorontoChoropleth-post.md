@@ -27,7 +27,7 @@ excerpt: "My friends and I were discussing ways to tell a story with data. I wan
 </style>
 
 <div id="wrapper"><iframe id="scaled-frame" src="https://torontochoropleth.herokuapp.com/2016TorontoChoropleth"></iframe></div>
-___
+
 # Why?
 
 My friends and I were discussing ways to tell a story with data. I wanted to try my hand at choropleths, specifically using Bokeh and creating an interactive feature. I feel that data can create a stronger impact on the viewer when you can include them as a participant. So, I was thinking about Toronto neighbourhoods and I wondered if places like "Little Italy", "Little Portugal", or "Chinatown" had the highest population of immigrants who report their neighbourhoods namesake as their birthplace. 
