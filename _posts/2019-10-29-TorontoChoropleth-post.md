@@ -8,7 +8,7 @@ categories:
 # The Finished Product
 
 <style>
-#wrapper { width: 710px; height: 1420px; padding: 0; overflow: hidden; }
+#wrapper { width: 710px; height: 350px; padding: 0; overflow: hidden; }
 #scaled-frame { width: 1000px; height: 2000px; border: 0px; }
 #scaled-frame {
     zoom: 0.71;
@@ -41,7 +41,7 @@ To be able to share the interactive map I used Heroku to deploy my [Bokeh applic
 
 ### Inspiration
 
-https://everydayanalytics.ca/2016/03/plotting-choropleths-from-shapefiles-in-r-with-ggmap-toronto-neighbourhoods-by-population.html
+[Plotting Choropleths from Shapefiles in R with ggmap – Toronto Neighbourhoods by Population](https://everydayanalytics.ca/2016/03/plotting-choropleths-from-shapefiles-in-r-with-ggmap-toronto-neighbourhoods-by-population.html)
 
 ### References
 
@@ -53,6 +53,6 @@ https://open.toronto.ca/dataset/neighbourhoods/ (accessed October 29, 2019).
 
 ### Helpful pages
 
-https://towardsdatascience.com/a-complete-guide-to-an-interactive-geographical-map-using-python-f4c5197e23e0
+[A Complete Guide to an Interactive Geographical Map using Python](https://towardsdatascience.com/a-complete-guide-to-an-interactive-geographical-map-using-python-f4c5197e23e0)
 
-https://collaboration133.com/how-to-scale-iframe-content-in-ie-chrome-firefox-and-safari/2717/
+[How to Scale iFrame Content in IE, Chrome, Firefox, and Safari](https://collaboration133.com/how-to-scale-iframe-content-in-ie-chrome-firefox-and-safari/2717/)
