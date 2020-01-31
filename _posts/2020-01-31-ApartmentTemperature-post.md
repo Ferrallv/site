@@ -1,8 +1,7 @@
 ---
 title: "Apartment Temperature - A little work on my cold living space"
 excerpt_separator: "<!--more-->"
-categories:
-  
+categories: 
   - Project
 ---
 
