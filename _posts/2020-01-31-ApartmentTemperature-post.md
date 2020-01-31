@@ -2,8 +2,11 @@
 title: "Apartment Temperature - A little work on my cold living space"
 excerpt_separator: "<!--more-->"
 categories:
+  
   - Project
 ---
+
+
 
 ## An old building and no thermostat
 
