@@ -21,15 +21,12 @@ A full description of data collection and cleaning processes can be found in a n
 
 The long and the short of it is, it's too cold.
 
-{% include 'Apartment Temperature Over Time.html' %}
 
 In my data analysis I found that for this stretch of time it was too cold 55% of the time. Yikes! 
 
 What else I found interesting was that, on average, I used electricity the most around dinner time, and the late evening! Dinner makes sense, and my thoughts on the late evening was that heater was working hardest when it was coldest right before we turn it off to sleep.
 
 We can take a look at the ordinal results of the average hourly recordings.
-
-{% include 'Scaled Data for Ordinal Comparison.html' %}
 
 This was all pretty straightforward. The hardest part is waiting a month to record a number of data points. Now it will take a year (!) before I have enough to run some meaningful regressions.
 
