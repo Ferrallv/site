@@ -33,7 +33,7 @@ We can take a look at the ordinal results of the average hourly recordings.
 
 This was all pretty straightforward. The hardest part was waiting a month to record a enough data points. Now it will take a year (!) before I have enough to run some meaningful regressions.
 
-Leaving it at that felt too lacklustre to me. Touching and moving data always gives me a feeling of exploration and surprise so I slapped together a little app using Plotly Dash and Heroku to show some of the daily data recordings. 
+Leaving it at that felt too lacklustre. Touching and moving data always gives me a feeling of exploration and surprise so I slapped together a little app using Plotly Dash and Heroku to show some of the daily data recordings. 
 
 <style>
 #wrapper { width: 710px; height: 600px; padding: 0; overflow: hidden; }
