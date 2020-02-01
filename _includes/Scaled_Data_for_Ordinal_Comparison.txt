@@ -1,6 +1,6 @@
 <div>
         
-        
+                <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
             <div id="097e548e-8c9f-4bdd-ad94-b20f061068d1" class="plotly-graph-div" style="height:750px; width:100%;"></div>
             <script type="text/javascript">
                 
