@@ -21,7 +21,7 @@ A full description of data collection and cleaning processes can be found in a n
 
 The long and the short of it is, it's too cold.
 
-`.html graph here`
+{% include Apartment_Temperature_Over_Time.txt %}
 
 In my data analysis I found that for this stretch of time it was too cold 55% of the time. Yikes! 
 
