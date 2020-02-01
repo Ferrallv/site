@@ -21,7 +21,7 @@ A full description of data collection and cleaning processes can be found in a n
 
 The long and the short of it is, it's too cold.
 
-{% include 'Apartment_Temperature_Over_Time.html' %}
+`.html graph here`
 
 In my data analysis I found that for this stretch of time it was too cold 55% of the time. Yikes! 
 
@@ -29,8 +29,10 @@ What else I found interesting was that, on average, I used electricity the most 
 
 We can take a look at the ordinal results of the average hourly recordings.
 
-{% include 'Scaled_Data_for Ordinal_Comparison.html' %}
+`.html graph here`
 
 This was all pretty straightforward. The hardest part was waiting a month to record a enough data points. Now it will take a year (!) before I have enough to run some meaningful regressions.
 
 Leaving it at that felt too lacklustre to me. Touching and moving data always gives me a feeling of exploration and surprise so I slapped together a little app using Plotly Dash and Heroku to show some of the daily data recordings. 
+
+`iframe embed app here`
