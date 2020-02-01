@@ -36,7 +36,7 @@ This was all pretty straightforward. The hardest part was waiting a month to rec
 Leaving it at that felt too lacklustre to me. Touching and moving data always gives me a feeling of exploration and surprise so I slapped together a little app using Plotly Dash and Heroku to show some of the daily data recordings. 
 
 <style>
-#wrapper { width: 710px; height: 500px; padding: 0; overflow: hidden; }
+#wrapper { width: 710px; height: 600px; padding: 0; overflow: hidden; }
 #scaled-frame { width: 1000px; height: 2000px; border: 0px; }
 #scaled-frame {
     zoom: 0.71;
