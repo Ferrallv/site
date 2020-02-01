@@ -35,4 +35,22 @@ This was all pretty straightforward. The hardest part was waiting a month to rec
 
 Leaving it at that felt too lacklustre to me. Touching and moving data always gives me a feeling of exploration and surprise so I slapped together a little app using Plotly Dash and Heroku to show some of the daily data recordings. 
 
-<iframe src=https://apartment-dash-app.herokuapp.com/></iframe>
+<style>
+#wrapper { width: 710px; height: 500px; padding: 0; overflow: hidden; }
+#scaled-frame { width: 1000px; height: 2000px; border: 0px; }
+#scaled-frame {
+    zoom: 0.71;
+    -moz-transform: scale(0.71);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.71);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.71);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame  { zoom: 1;  }
+}
+</style>
+
+<div id="wrapper"><iframe id="scaled-frame" src="https://apartment-dash-app.herokuapp.com/"></iframe></div>
