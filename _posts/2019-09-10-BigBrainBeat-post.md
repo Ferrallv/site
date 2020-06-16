@@ -5,15 +5,10 @@ categories:
   - Project
 ---
 
+- TOC
+{:toc style="font-size: 0.75em;"}
 
 
-___
-
-## *TL;DR*
-
-I set out with the goal to find the BPM of a music sample using an AI (specifically a Convolution Neural Network). It turned out to be pretty successful with the data I used.
-
-___
 
 ## Overview
 
@@ -34,8 +29,9 @@ In version 1 I was attempting to use a [Short-time Fourier transform](https://en
 To explain, a wave file generally has 44100 records per second of audio (the sample rate). To emulate the location of a beat, a vector was created to match the audio file, where 1 was entered to indicate that a beat should be at this time, and a 0 otherwise.
 
 To demonstrate, a target vector for a 4 second slice of music, played at 60 BPM (one beat per second), at a sample rate of 4, and starting on the beat would look like:
-
-> [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+~~~ python
+[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+~~~
 {: style="text-align: center;"}
 
 Using target vectors like this at higher sample rates proved to be difficult for my models to predict and I had little success. I went back to the drawing board.
@@ -58,23 +54,23 @@ In Phase 1 I wrote 80 drum tracks, with BPM ranging from 80-160.
 
     -  Music that has either half or double the BPM of other music that started at the same time will have their beats match up every time for the slower piece, and every second beat for the faster. To illustrate:
 
-{:center:}
 60 BPM, sample rate = 4
-
-    [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
-
+~~~ python
+[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+~~~
+{: style="text-align:center;"}
 120 BPM, sample rate = 4
 
-    [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
-{: center style="text-align:center;"}
+~~~ python
+[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]
+~~~
+{: style="text-align:center;"}
       
 
 With this reasoning in mind, I felt that I effectively covered BPM between 40-320.
 
 The phase 1 `.wav` files were simply a drum kick sound for every beat. The created tracks were ~10 seconds in length. By creating the music myself I was able to insure that the beats were exactly in time with the prescribed BPM and consistently so.
-
 In Phase 2 I created a cacophony of drums and synths. It was also created digitally to be consistent and precisely in time. The rhythms and sounds changed erratically throughout. Every drum sound was synced to a segmentation of 1/16<sup>th</sup> of a beat. The BPM range in phase 2 is the same as that in phase 1. The tracks length are similarly ~10 seconds.
-
 In Phase 3 I used the music listed in the `SourcesAndInspirations.md` found [here](https://github.com/Ferrallv/BigBrainBeat/blob/master/SourcesAndInspirations.md). For those interested, I converted each file into `.wav` using [this](https://librosa.github.io/librosa/generated/librosa.output.write_wav.html). I could not be positive what the exact BPM was for each song, instead tapping the tempo myself 50 times and taking the average speed using [this website](https://www.all8.com/tools/bpm.htm).
 
 ### The Model & Process
@@ -101,22 +97,27 @@ After creating an EC2 instance with a [DLAMI](https://docs.aws.amazon.com/dlami/
 In each phase, the model and its weights from the previous phase were imported and used as a starting point for the new phase of training.
 
 ### Results
+{: no_toc}
 
 In phase 1 we see an accuracy of 63%, phase 2: 59%, and phase 3: 90%. The accuracy in the third model being higher is likely explained by the lack of variety of tempo in the music that was used.
 
 The mapped accuracy and loss scores over the epochs indicate that the model is successful with little over-fitting.
 
 #### The accuracy and loss over epochs in phase 1
+{: no_toc}
 
 {% include BigBrainBeatv3_phase1_accAndLoss.html %}
 
 #### The accuracy and loss over epochs in phase 2
+{: no_toc}
 
 {% include BigBrainBeatv3_phase2_accAndLoss.html %}
 
 #### The accuracy and loss over epochs in phase 3
+{: no_toc}
 
 {% include BigBrainBeatv3_phase3_accAndLoss.html %}
+
 
 ## Conclusions
 
@@ -139,3 +140,10 @@ To see the models in action/application, run the `BigBrainBeat_Presentation.ipyn
 
 
 <a name="fn1">1</a>: Bouwer FL, Van Zuijen TL, Honing H (2014) Beat Processing Is Pre-Attentive for Metrically Simple Rhythms with Clear Accents: An ERP Study. PLoS ONE 9(5): e97467. https://doi.org/10.1371/journal.pone.0097467
+
+
+
+## *TL;DR*
+
+I set out with the goal to find the BPM of a music sample using an AI (specifically a Convolution Neural Network). It turned out to be pretty successful with the data I used.
+

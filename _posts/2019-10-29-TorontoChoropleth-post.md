@@ -9,7 +9,7 @@ excerpt: "A Toronto Choropleth using Bokeh"
 # The Finished Product
 
 <style>
-#wrapper { width: 710px; height: 500px; padding: 0; overflow: hidden; }
+#wrapper { width: 710px; height: 500px; padding: 0; overflow: hidden;}
 #scaled-frame { width: 1000px; height: 2000px; border: 0px; }
 #scaled-frame {
     zoom: 0.71;
