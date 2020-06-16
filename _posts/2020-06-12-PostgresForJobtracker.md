@@ -12,6 +12,7 @@ categories:
 
 This post is to walkthrough the Postgresql database setup to use with [jobTracker](https://github.com/Ferrallv/jobTracker). Depending on your operating system the installation process will vary. On macOS I used [Postgres.app](https://postgresapp.com/). Other methods can be found [here](https://www.postgresql.org/download/)! Here we will walk through installing Postgres.app for macOS and creating the database.
 
+
 ## Postgres.app Installation
 
 Navigate to [Postgres.app](https://postgresapp.com/) and select the 'Downloads' tab. Press the download button under the option 'Latest Release'
@@ -85,7 +86,7 @@ CREATE TABLE contacts (
 	id 			serial PRIMARY KEY,
 	name 		varchar(45) NOT NULL, 
 	position 	varchar(45),
-	number 		varchar(15),
+	number 		varchar(45),
 	email 		email,
 	company 	varchar(45) NOT NULL,
 	note 		text
