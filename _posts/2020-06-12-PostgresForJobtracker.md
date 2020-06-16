@@ -98,7 +98,7 @@ CREATE TABLE application (
 CREATE TABLE interview (
 	id 		serial PRIMARY KEY,
 	date 	bigint NOT NULL,
-	method 	varchar(10) NOT NULL,
+	method 	varchar(45) NOT NULL,
 	job_id 	int REFERENCES application(id)
 );
 ```
