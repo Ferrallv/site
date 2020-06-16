@@ -52,25 +52,11 @@ In the Terminal after entering the Postgres CLI our first step is to create the 
 CREATE DATABASE jobTracker;
 ```
 
-And to connect to the database enter `\c jobtracker;`. Once connected we would like to create a user that the jobTracker app will use to connect to the database. We do this with the following commands:
-
-### USER
-
-```
-CREATE USER <username> WITH PASSWORD '<password>';
-
-GRANT ALL PRIVILEGES ON DATABASE jobtracker TO <username>;
-
-GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO <username>;
-```
-
-Be sure to replace the '<>' items with a username and password you would like the app to use.
-
-These commands create a user and give it the necessary access rights to create, read, update, and delete records from the database.
-
-Before we create the tables we will want to create a custom domain to hold emails. This [discussion](https://dba.stackexchange.com/questions/68266/what-is-the-best-way-to-store-an-email-address-in-postgresql) gives us the tools, links,  and reasoning behind the implementation.
+And to connect to the database enter `\c jobtracker;`.
 
 ### TABLES
+
+Before we create the tables we will want to create a custom domain to hold emails. This [discussion](https://dba.stackexchange.com/questions/68266/what-is-the-best-way-to-store-an-email-address-in-postgresql) gives us the tools, links, and reasoning behind the implementation.
 
 ```
 CREATE EXTENSION citext;
@@ -133,5 +119,22 @@ For full descriptions of the data types check out [Postgres Docs](https://www.po
 
 - NOT NULL: a constraint put on a column to indicate that every record must contain a valid entry for this field.
 
+### USER
+
+```
+CREATE USER <username> WITH PASSWORD '<password>';
+
+GRANT ALL PRIVILEGES ON DATABASE jobtracker TO <username>;
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO <username>;
+
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO <username>;
+
+ALTER DEFAULT PRIVILEGES FOR USER <username> IN SCHEMA public GRANT ALL PRIVILEGES ON TABLES TO <username>;
+```
+
+Be sure to replace the '<>' items with a username and password you would like the app to use.
+
+These commands create a user and give it the necessary access rights to create, read, update, and delete records from the database. This is the username and password the app will use to connect to the database!
 
 
