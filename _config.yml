@@ -65,7 +65,7 @@ plugins:
 author:
   name   : "Vanin Ferrall"
   avatar : "assets/images/Vanin_Ferrall.jpg"
-  bio    : "Ready to laugh and high-five."
+  bio    : "*High-five*"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
