@@ -3,6 +3,7 @@ title: "jobTracker - Database Setup"
 excerpt_separator: "<!--more-->"
 categories: 
   - Project
+excerpt: "Setting up your database for jobTracker"
 ---
 
 1. TOC
